@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Searching results</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!--link(rel="shortcut icon" href="img/favicon.ico")-->
+    <link rel="stylesheet" href="css/main.css"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row header_row">
+          <div class="col-5 col-sm-5 col-md-3 col-xl-3 h_left_col">
+            <div class="logo_block"><a class="logo_link" href="#"><img src="img/logo.svg"/></a></div>
+          </div>
+          <div class="col-1 col-sm-1 col-md-6 col-xl-6 h_center_col">
+            <div class="main_menu">
+              <div class="mm_close"></div>
+              <ul class="nav">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Catalog.html">Catalog</a><span class="arrow"><span></span></span>
+                  <ul class="sub-menu level2">
+                    <li><a href="#">Embedded technology</a><span class="arrow"><span></span></span>
+                      <ul class="sub-menu level3">
+                        <li><a href="#">Cooker hoods</a></li>
+                        <li><a href="#">Mini ovens</a></li>
+                        <li><a href="#">Microwaves</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Large kitchen appliances</a><span class="arrow"><span></span></span>
+                      <ul class="sub-menu level3">
+                        <li><a href="#">Cooker hoods</a></li>
+                        <li><a href="#">Mini ovens</a></li>
+                        <li><a href="#">Microwaves</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Small kitchen appliances</a><span class="arrow"><span></span></span>
+                      <ul class="sub-menu level3">
+                        <li><a href="#">Cooker hoods</a></li>
+                        <li><a href="#">Mini ovens</a></li>
+                        <li><a href="#">Microwaves</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Accessories</a><span class="arrow"><span></span></span>
+                      <ul class="sub-menu level3">
+                        <li><a href="#">Cooker hoods</a></li>
+                        <li><a href="#">Mini ovens</a></li>
+                        <li><a href="#">Microwaves</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-xl-3 h_right_col">
+            <div class="lang">
+              <ul class="m_menu">
+                <li><a href="#"><span class="icon"><img src="img/Flag_of_Poland.svg"/></span></a></li>
+                <li><a href="#"><span class="icon"><img src="img/Flag of Russia.svg"/></span></a></li>
+                <li><a href="#"><span class="icon"><img src="img/Flag of Belarusi.svg"/></span></a></li>
+              </ul>
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">local versions of sites</button>
+                <div class="dropdown-menu lang_dropdown" aria-labelledby="lang_menu">
+                  <ul>
+                    <li><a href="#"><span class="icon"><img src="img/Flag_of_Poland.svg"/></span><span>Polish</span></a></li>
+                    <li><a href="#"><span class="icon"><img src="img/Flag of Russia.svg"/></span><span>Russia</span></a></li>
+                    <li><a href="#"><span class="icon"><img src="img/Flag of Belarusi.svg"/></span><span>Belarus</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="search_block">
+              <button class="search_btn" id="search_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.7284 29.0411L20.3123 20.2885C22.4589 18.1356 23.7888 15.1677 23.7888 11.8944C23.7888 5.3355 18.4533 0 11.8944 0C5.3355 0 0 5.3355 0 11.8944C0 18.4533 5.3355 23.7888 11.8944 23.7888C14.7734 23.7888 17.4157 22.7597 19.4751 21.052L27.9117 29.8261C28.0227 29.9422 28.1711 30 28.3201 30C28.4617 30 28.6027 29.9473 28.7126 29.842C28.938 29.625 28.9448 29.2665 28.7284 29.0411ZM11.8944 22.656C5.96024 22.656 1.1328 17.8286 1.1328 11.8944C1.1328 5.96024 5.96024 1.1328 11.8944 1.1328C17.8286 1.1328 22.656 5.96024 22.656 11.8944C22.656 17.8286 17.828 22.656 11.8944 22.656Z" fill="white"/></svg></button>
+              <div class="dropdown-menu search_dropdown" aria-labelledby="search_dropdown">
+                <div class="container p-0">
+                  <form class="search_form">
+                    <input class="form-control" placeholder="Site search"/>
+                    <button class="search_form_btn" type="submit"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 0V7.5H3" stroke="#CF0F1D" stroke-width="2"/><path d="M0 7.5L4.5 4.90192V10.0981L0 7.5Z" fill="#CF0F1D"/></svg></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="mm_btn">
+              <button class="hamburger"><span></span><span></span><span></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page_content">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#content">Searching results</a></li>
+        </ul>
+        <h1 class="page_title">Search results for: test</h1>
+        <div class="content">
+          <div class="searching_results_form">
+            <form class="search_form">
+              <input class="form-control" placeholder="Site search"/>
+              <button class="search_form_btn" type="submit"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 0V7.5H3" stroke="#CF0F1D" stroke-width="2"/><path d="M0 7.5L4.5 4.90192V10.0981L0 7.5Z" fill="#CF0F1D"/></svg></button>
+            </form>
+          </div>
+          <div class="row searching_results">
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-xl-3"><a class="img_thumbnail_link" href="#">
+                    <div class="img_thumbnail" style="background-image:url(img/news.png)"></div></a></div>
+                <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+                  <div class="body"><a class="news_title" href="#">Lorem ipsum dolor sit amet</a>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor magna, feugiat nec quam vestibulum, congue suscipit lectus.</div><a class="btn_default btn_red" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination_block">
+            <ul class="pagination_nav">
+              <li><a class="arrow prev_page" href="#"></a></li>
+              <li><a href="#">1</a></li>
+              <li><a class="empty" href="#">...</a></li>
+              <li><a class="active" href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a class="arrow next_page" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer_row">
+          <div class="col-12 col-sm-12 col-md-12 col-xl-3 f_col_left">
+            <div class="f_logo_block"><a href="#"><img src="img/f_logo.svg"/></a></div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xl-6 f_col_center">
+            <nav>
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xl-3 f_col_right"><a class="phone" href="tel:0844 248 4149"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.2893 24.0001C18.2907 24.0001 17.0847 23.7499 15.7584 23.2494C12.8507 22.1531 9.68712 19.9865 6.85047 17.1499C4.01301 14.3124 1.84637 11.148 0.749327 8.24031C-0.247619 5.59659 -0.250041 3.42672 0.743676 2.43381C0.886558 2.29092 1.03186 2.13755 1.18201 1.97933C2.08854 1.02597 3.11294 -0.0468527 4.47072 0.00158189C5.40631 0.0403296 6.31285 0.621545 7.24118 1.77671C9.98419 5.18812 8.74749 6.40383 7.31625 7.81327L7.06358 8.06352C6.82948 8.29762 6.38711 9.38175 10.5024 13.4971C11.8457 14.8403 12.9912 15.8236 13.9066 16.4185C14.483 16.793 15.5138 17.3597 15.9368 16.9367L16.1911 16.68C17.5989 15.252 18.8146 14.0194 22.2236 16.76C23.3788 17.6883 23.9592 18.594 23.9979 19.5312C24.0536 20.8882 22.9727 21.915 22.0186 22.8207C21.8612 22.9709 21.7078 23.1162 21.5649 23.2583C21.0717 23.7523 20.283 24.0001 19.2893 24.0001ZM4.37385 0.807211C3.40919 0.807211 2.53818 1.72424 1.76726 2.53552C1.61227 2.69858 1.46212 2.8568 1.3144 3.00453C0.574155 3.74396 0.649229 5.687 1.50491 7.95616C2.5624 10.7589 4.66365 13.8216 7.422 16.5799C10.1795 19.3367 13.2406 21.4379 16.0442 22.4946C18.3133 23.3519 20.2564 23.4246 20.995 22.6859C21.1427 22.5382 21.3009 22.3881 21.464 22.2339C22.293 21.446 23.2335 20.5532 23.1923 19.5627C23.1641 18.8822 22.6684 18.15 21.7191 17.3872C18.8784 15.1027 18.0841 15.9091 16.7666 17.2451L16.5083 17.5058C15.8787 18.1363 14.8559 17.9966 13.4674 17.0942C12.5044 16.4677 11.3145 15.449 9.93253 14.0662C6.51708 10.6515 5.42488 8.56159 6.49367 7.49038L6.75118 7.2361C8.0904 5.91867 8.89845 5.12354 6.61314 2.28124C5.84868 1.33273 5.11732 0.837079 4.43681 0.808018C4.41583 0.807211 4.39484 0.807211 4.37385 0.807211Z" fill="white"/></svg><span>0844 248 4149</span></a>
+            <ul class="social_menu">
+              <li><a class="facebook" href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.25 29.75V0.25H29.75V29.75H0.25Z" stroke="white" stroke-width="0.5"/><path d="M16.6786 16.1095H16.4286V16.3595V25.9913H12.9452V16.3477V16.0977H12.6952H9.61182V12.7443H12.6952H12.9452V12.4943V9.64559C12.9452 8.04859 13.4333 6.84445 14.2493 6.03958C15.066 5.23388 16.2388 4.80103 17.6597 4.80103C18.8512 4.80103 19.8894 4.87672 20.3884 4.92768V7.90623H18.5935C17.756 7.90623 17.1879 8.10612 16.8417 8.51856C16.5038 8.92119 16.4286 9.46945 16.4286 10.0357V12.5061V12.7561H16.6786H20.2123L19.7803 16.1095H16.6786Z" stroke="white" stroke-width="0.5"/></svg></a></li>
+              <li><a class="pinterest" href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.25 29.75V0.25H29.75V29.75H0.25Z" stroke="white" stroke-width="0.5"/><path d="M13.4575 18.0948L13.6999 18.1559L13.4575 18.0948L13.4575 18.0949L13.4574 18.0953L13.457 18.0967L13.4555 18.1026L13.4498 18.1254L13.4278 18.2125L13.3482 18.5275C13.2817 18.7905 13.1916 19.1465 13.0971 19.5187C12.9077 20.2643 12.7017 21.0708 12.6314 21.3285C12.2094 22.8593 11.0738 24.4107 10.6771 24.9277C10.5853 24.2703 10.3639 22.3476 10.7399 20.7547L10.74 20.7544C10.8521 20.2763 11.2361 18.6695 11.5923 17.1813C11.7703 16.4374 11.9413 15.7234 12.0678 15.1954L12.2195 14.5623L12.2616 14.387L12.2726 14.341L12.2754 14.3293L12.2761 14.3263L12.2763 14.3255L12.2763 14.3254L12.0332 14.267L12.2764 14.3253L12.2976 14.2367L12.2571 14.1557L12.257 14.1556L12.257 14.1554L12.2569 14.1553L12.2569 14.1552L12.2568 14.1551L12.2547 14.1507L12.2448 14.1293C12.2358 14.1095 12.2225 14.0789 12.2061 14.0383C12.1735 13.9569 12.129 13.8357 12.0843 13.6806C11.9948 13.3702 11.905 12.9269 11.905 12.3994C11.905 10.7176 12.859 9.59976 13.9245 9.59976C14.387 9.59976 14.7097 9.77119 14.9217 10.0309C15.1393 10.2974 15.2584 10.6798 15.2584 11.1228C15.2584 11.6193 15.0983 12.26 14.8817 12.9886C14.8227 13.187 14.7596 13.3915 14.6955 13.5996C14.5288 14.1403 14.3546 14.7052 14.225 15.2493L14.2249 15.2498C13.8885 16.6763 14.9509 17.8267 16.324 17.8267C17.563 17.8267 18.566 17.0278 19.2463 15.8408C19.9273 14.6526 20.3092 13.0412 20.3092 11.3119C20.3092 9.96633 19.8545 8.76921 18.9687 7.90863C18.0829 7.04803 16.7894 6.54657 15.1538 6.54657C11.4386 6.54657 9.10003 9.32563 9.10003 12.4349C9.10003 13.5179 9.42552 14.3086 9.93816 14.9118C10.0432 15.0404 10.0719 15.0946 10.0819 15.1326C10.0898 15.1628 10.093 15.2102 10.0549 15.3462L10.0548 15.3467C10.0241 15.4571 9.97912 15.643 9.9357 15.8225L9.93446 15.8276C9.88965 16.0128 9.84658 16.1907 9.81845 16.292C9.79181 16.387 9.75072 16.4205 9.72544 16.4328C9.69906 16.4456 9.64723 16.4559 9.56103 16.4226C8.05496 15.8037 7.30688 14.1244 7.30688 12.1512C7.30688 8.94088 10.0114 5.03711 15.473 5.03711C19.8483 5.03711 22.6934 8.18548 22.6934 11.5483C22.6934 16.0949 20.1731 19.3716 16.5841 19.3716C15.9893 19.3716 15.4115 19.2115 14.9351 18.9602C14.4555 18.7072 14.0976 18.3722 13.9208 18.0388L13.6164 17.4648L13.4575 18.0948Z" stroke="white" stroke-width="0.5"/></svg></a></li>
+            </ul>
+          </div>
+          <div class="col-12 copyright">
+            <p>© maunfeld.com, 2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="js/masonry.pkgd.js"></script>
+    <script src="js/phone-mask.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
