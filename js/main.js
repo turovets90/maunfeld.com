@@ -115,6 +115,14 @@ $(document).ready(function(){
     });
 
 
+    var msnry = new Masonry( '.news_grid', {
+        //columnWidth: 20,
+        itemSelector: '.grid-item',
+        //horizontalOrder: true,
+        //gutter: 5
+    });
+
+
 
 
 
