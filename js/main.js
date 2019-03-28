@@ -95,6 +95,26 @@ $(document).ready(function(){
     }
 
 
+    $('.filter_item').each(function(){
+        var filter_head=$(this).find('.filter_head');
+        var filter_body=$(this).find('.filter_body');
+        var filter_item=$(this);
+        $(filter_head).click(function(){
+            $('.filter_item').removeClass('b_0 active');
+            $('.filter_body').slideUp();
+            if($(filter_body).is(':visible')){
+                $(filter_body).slideUp();
+                $(filter_item).removeClass('active');
+                $(filter_item).prev().removeClass('b_0');
+            }else{
+                $(filter_body).slideDown();
+                $(filter_item).addClass('active');
+                $(filter_item).prev().addClass('b_0');
+            }
+        });
+    });
+
+
 
 
 
