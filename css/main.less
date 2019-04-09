@@ -995,9 +995,10 @@ background: @red;
     border:1px solid @red;
     &:hover{
       background: #CF0F1D;
+      color: #fff;
     }
     &:focus{
-      background: #B4000E;
+      background: #B4000E;  color: #fff;
     }
   }
 
@@ -1005,6 +1006,14 @@ background: @red;
     color: #fff;
     background: none;
     border:1px solid #fff;
+    &:hover{
+      border:1px solid @red;
+      background: @red;
+    }
+   &:focus{
+     border:1px solid  #B4000E;
+     background:  #B4000E;
+   }
   }
   &.btn_blue{
     background: #25346A;
@@ -1416,6 +1425,7 @@ footer{
           font-size: 16px;
           &:hover, &:focus{
             text-decoration: none;
+            color: @red;
           }
         }
       }
@@ -2561,10 +2571,12 @@ footer{
 
 .searching_results{
   .item{
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 15px;
     margin-bottom: 20px;
     border: 1px solid #BCBABD;
+    @media (max-width:767px){
+      padding: 5px 10px;
+    }
     .img_thumbnail_link{
       display: inline-block;
       width: 100%;
