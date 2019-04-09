@@ -124,8 +124,26 @@ $(document).ready(function(){
 
 
 
+    $('.product_main_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        //fade: true,
+        asNavFor: '.product_slider_nav'
+    });
 
-    
+    $('.product_slider_nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots:true,
+        asNavFor: '.product_main_slider',
+        focusOnSelect: true
+    });
+
+
+
+
 });
 
 
