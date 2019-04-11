@@ -604,15 +604,26 @@ background: @red;
             .ai-center();
             &:hover, &:focus{
               text-decoration: none;
+
+              span{
+                color: #25346A;
+
+                &.icon{
+                  border:3px solid #25346A;
+                }
+              }
+
             }
             span{
               color: #fff;
               font-size: 16px;
               font-weight: @light;
+              .transition(@transition_default);
               &.icon{
                  .flex();
                 border:3px solid #9F000C;
                 margin-right: 3px;
+                .transition(@transition_default);
               }
             }
           }
@@ -1130,7 +1141,7 @@ background: @red;
   padding: 20px;
   &:hover{
     text-decoration: none;
-    @media (min-width:768px){
+    //@media (min-width:768px){
       background: #fff;
       box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1), 0px 50px 90px rgba(0, 0, 0, 0.1);
 
@@ -1147,7 +1158,9 @@ background: @red;
       .cat_name{
         color: @red;
       }
-    }
+    //}
+
+
 
   }
   picture{
@@ -1239,6 +1252,9 @@ background: @red;
   }
   &:hover{
     .special_offers_item_link{
+      @media (max-width:1200px){
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1), 0 50px 90px rgba(0, 0, 0, 0.1);
+      }
       @media (min-width:1200px){
         position: absolute;
         .transform(scale(1.25));
@@ -1254,7 +1270,7 @@ background: @red;
         .parent_category{
           display: none;
         }
-      }
+       }
     }
   }
   .special_offers_item_link{
@@ -1346,6 +1362,11 @@ iframe{
 .news_item{
   border:1px solid #BDBBBE;
   margin-bottom: 10px;
+  background: #fff;
+  .transition(@transition_default);
+  &:hover{
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1), 0 50px 90px rgba(0,0,0,0.1);
+  }
   &.large{
     .item_body .item_title{
       margin-bottom: 15px;
@@ -1464,6 +1485,9 @@ footer{
       }
       a{
         display: inline-block;
+        &:hover{
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -2127,6 +2151,12 @@ footer{
       padding:  0 15px;
       width: 20%;
       text-align: center;
+      .transition(@transition_default);
+      &:hover{
+        @media (min-width:768px){
+          .transform(translateY(-20px));
+        }
+      }
       @media (max-width:991px){
         width: 33.33%;
        margin-bottom: 30px;
@@ -3021,6 +3051,19 @@ footer{
       .item{
         border-bottom:1px solid #9D9EA3;
         padding: 10px 0;
+        .transition(@transition_default);
+        &:hover{
+          background: @red;
+          border-bottom:1px solid @red;
+          *{
+            color: #fff;
+          }
+          >.row{
+            > div{
+              color: #fff;
+            }
+          }
+        }
         @media (max-width:767px){
           padding: 5px 0;
         }
@@ -3029,6 +3072,7 @@ footer{
             font-size: 16px;
             line-height: normal;
             color: #444A59;
+            .transition(@transition_default);
             @media (max-width:767px){
               font-size: 14px;
             }
