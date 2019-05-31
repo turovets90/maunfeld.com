@@ -1708,7 +1708,7 @@ footer{
       border-top:1px solid #BDBBBE;
       position: absolute;
       padding: 10px 10px;
-      background: #fff;
+      background: @red;
       z-index: 9;
       width: 100%;
       .transition(@transition_default);
@@ -1720,11 +1720,11 @@ footer{
         li{
           a{
             font-size: 15px;
-            color: #000000;
+            color: #fff;
             display: inline-block;
             font-weight: @regular;
             &:hover, &:focus{
-              color: @red;
+              //color: @red;
               text-decoration: underline;
             }
           }
