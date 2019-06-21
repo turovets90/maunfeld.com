@@ -135,10 +135,20 @@ $(document).ready(function(){
     $('.product_slider_nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false,
-        dots:true,
+        arrows: true,
+        dots:false,
+        vertical:true,
         asNavFor: '.product_main_slider',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+
+            {
+                breakpoint: 767,
+                settings: {
+                    vertical:false,
+                }
+            }
+        ]
     });
 
 
